@@ -6,9 +6,6 @@ a = input("Qual o ano? ")
 
 print('Você nasceu no dia',d,'de',m,'de',a + ', certo?')
 
-
-
-
 idade =  int(2020) - int(a)
 
 print("Você tem ", idade, " anos")
