@@ -4,8 +4,10 @@ phrase = str(input('Digite a frase ')).upper().strip()
 
 words = phrase.split()
 join = ''.join(words)
+inverse = ''
 
-inverse = join[::-1] #Frase invertida
+for letter in range(len(join)-1, -1, -1):
+    inverse += join[letter]
 
 if join == inverse:
     print('''O inverso de {} é {}
