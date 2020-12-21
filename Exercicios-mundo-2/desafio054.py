@@ -18,5 +18,6 @@ for i in range (0,7):
     else:
         less18 += 1
 
-print()
+print('''Com os dados informados pude analisar que dos 7 anos inseridos {} já atingiram a maioridade e {} ainda são de menor'''.format(plus18,plus,less18,less))
+
 
