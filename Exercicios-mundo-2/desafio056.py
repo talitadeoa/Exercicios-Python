@@ -28,5 +28,5 @@ for pessoa in range (1,5):
 
 print(f'''A médias das idades {idades} é: {media}
 {mvn} é o homem mais velho e tem: {mvi} anos
-E {m20} mulheres tem menos de 20 anos''')
+Ao todo são: {m20} mulheres com menos de 20 anos''')
 
