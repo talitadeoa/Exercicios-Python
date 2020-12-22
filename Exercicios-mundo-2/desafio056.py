@@ -4,14 +4,29 @@ nomes = []
 idades = []
 sexos = []
 media = 0
+mvn = ''
+mvi = 0
+m20 = 0
 
 for pessoa in range (1,5):
-    #nomes.append(input(f'Qual o nome da {pessoa}ª pessoa? '))
-    idades.append(int(input(f'Qual a idade da {pessoa}ª pessoa? ')))
-    #sexos.append(input(f'Qual o sexo da {pessoa}ª pessoa? M para mulher e H para homem ')).upper()
-    media += idades[pessoa]/4
-    if sexo:
+    print(f'----- {pessoa}ªPESSOA -----')
+    nome = (input(f'NOME: '))
+    nomes.append(nome)
+    idade = (int(input(f'IDADE: ')))
+    idades.append(idade)
+    sexo = (input(f'SEXO: [M/F] ')).upper()
+    sexos.append(sexo)
 
+    media += idades[pessoa-1]/4
 
-print(idades,media)
+    if sexo == 'M' and idade > mvi:
+        mvi = idade
+        mvn = nome
+
+    if sexo == 'F' and idade < 20:
+        m20 += 1
+
+print(f'''A médias das idades {idades} é: {media}
+{mvn} é o homem mais velho e tem: {mvi} anos
+E {m20} mulheres tem menos de 20 anos''')
 
