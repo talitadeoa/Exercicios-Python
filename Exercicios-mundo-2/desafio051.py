@@ -2,7 +2,7 @@
 
 pt = int(input('Qual o primeiro termo da PA? '))
 r = int(input('E qual a razão? '))
-x = 10*r
+x = pt + (10-1) * r
 
-for i in range (pt, x, r):
+for i in range (pt, x+r, r):
     print(i, end=' ')

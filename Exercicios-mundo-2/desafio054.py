@@ -12,7 +12,7 @@ plus = []
 less = []
 
 for i in range (0,7):
-    year = int(input('Qual o {}º ano de nascimento? '.format(count)))
+    year = int(input(f'Qual o {i+1}º ano de nascimento? '))
     count += 1
     if c_year - year >= maioridade:
         plus18 += 1
