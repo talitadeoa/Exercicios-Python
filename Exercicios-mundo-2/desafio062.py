@@ -2,25 +2,21 @@
 
 pt = int(input('Qual o primeiro termo da PA? '))
 r = int(input('E qual a razão? '))
-x = pt + (10-1) * r
-pa = []
-pta = pt
+t = pt
+count = 1
+qtd = 10
+vai = 0
 
-while (len(pa)) < 10:
-    pa.append(pta)
-    pta += r
-    
-print(pa)
-
-mais = int(input('Deseja ver mais 5 progressões? SIM [1], NÃO [0]'))
-
-if mais == 1:   
-    while (len(pa)) < 15:
-        pa.append(pta)
-        pta += r
-    print(pa)
-elif mais == 0:
-    print('Ok, xau')
-else:
-    print('Po mano tu n digitou os dados certo, roda dnv aí entaão se quiser...')
+while vai != 0:
+    while count <= qtd:
+        print(f'{t} -> ', end='')
+        t += r
+        count += 1
+        vai = int(input('Quer ir dnv(mostra mai 5)? sim[1] nao[0]'))
+    if vai == 1:
+        qtd +=5
+    elif vai == 0:
+        print('fim')
+    else:
+        print('Po mano tu n digitou os dados certo, roda dnv aí entaão se quiser...')            
 
