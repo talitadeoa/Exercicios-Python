@@ -4,13 +4,14 @@ pt = int(input('Qual o primeiro termo da PA? '))
 r = int(input('E qual a razão? '))
 t = pt
 count = 1
-qtd = 10
-vai = 1
+qtd = 10  #<total
+vai = 1  #<mais
 pro = 10
 
 print('------ Gerador de PA ------ ')
 
 while vai != 0:
+    qtd += vai
     while count <= qtd:
         print(f'{t} -> ', end='')
         t += r
