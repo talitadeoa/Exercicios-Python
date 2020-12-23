@@ -27,7 +27,7 @@ elif escolha == 3:
         maior = n1    
     if n2 > n1: 
         maior = n2
-    print(f'O maior número é {maior}')    
+    print(f'Entre {n1} e {n2} o maior número é {maior}')    
 elif escolha == 5:
     print('OK')
 else:
