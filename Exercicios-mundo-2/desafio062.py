@@ -19,3 +19,8 @@ if mais == 1:
         pa.append(pta)
         pta += r
     print(pa)
+elif mais == 0:
+    print('Ok, xau')
+else:
+    print('Po mano tu n digitou os dados certo, roda dnv aí entaão se quiser...')
+
