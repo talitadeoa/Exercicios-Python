@@ -2,8 +2,8 @@
 
 num = int()
 media = 0
-maior = int()
-menor = int()
+maior = 0
+menor = 0
 count = 0
 state = 'S'
 
@@ -13,7 +13,6 @@ while state == 'S':
     media += num / count
     maior = num
     menor = num
-
     if num > maior:
         maior = num
     elif num < menor:
