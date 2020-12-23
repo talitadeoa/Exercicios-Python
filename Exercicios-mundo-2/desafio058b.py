@@ -6,6 +6,8 @@ palpite = int(input("Escolha um número entre 0 e 10... "))
 pc = random.randint(0,10)
 tentativas = 0
 
+print(pc)
+
 while palpite != pc:
     if palpite > pc:
         palpite = int(input('Menos... tente novamente: '))

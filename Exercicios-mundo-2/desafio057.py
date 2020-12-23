@@ -1,8 +1,13 @@
 #Um programa que lê o sexo de uma pessoa e só aceita os valores M ou F
 
-sexo = ''
+sexo = (input('Qual seu sexo? [M/F] ')).upper().strip()[0]
 
-while sexo not in ['M','F']:
-    sexo = (input('Qual seu sexo? [M/F] ')).upper()
+while sexo not in 'MF':
+    sexo = (input('Dados inválidos, responda novamente [M/F] ')).upper().strip()[0]
 
-print(sexo)
+if sexo == 'F':
+    sexo = 'feminino'
+else:
+    sexo = 'masculino'
+
+print(f'Sexo {sexo} registrado com sucesso')

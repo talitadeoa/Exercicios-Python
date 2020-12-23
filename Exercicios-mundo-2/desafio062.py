@@ -11,3 +11,11 @@ while (len(pa)) < 10:
     pta += r
     
 print(pa)
+
+mais = int(input('Deseja ver mais 5 progressões? SIM [1], NÃO [0]'))
+
+if mais == 1:   
+    while (len(pa)) < 15:
+        pa.append(pta)
+        pta += r
+    print(pa)
