@@ -2,11 +2,11 @@
 
 pt = int(input('Qual o primeiro termo da PA? '))
 r = int(input('E qual a razão? '))
-pa = []
-pta = pt
+t = pt
+count = 1
 
-while (len(pa)) < 10:
-    pa.append(pta)
-    pta += r
-    
-print(pa)
+while count <= 10:
+    print(f'{t} -> ', end='')
+    t += r
+    count += 1
+print('fim')
