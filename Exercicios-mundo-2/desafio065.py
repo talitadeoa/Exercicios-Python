@@ -2,9 +2,26 @@
 
 num = int()
 media = 0
-maior = 0
-menor = 0
+maior = int()
+menor = int()
+count = 0
+state = 'S'
 
-while num != 0:
-    num = int('Digite um número inteiro')
+while state == 'S':
+    num = int(input('Digite um número inteiro '))  
+    count += 1
+    media += num / count
+    maior = num
+    menor = num
+
+    if num > maior:
+        maior = num
+    elif num < menor:
+        menor = num
+    state = '0'
+
+    while state not in 'SN':
+        state = input('Deseja continuar? [S/N]: ').strip().upper()  
+
+print(f' Você digitou {count} valores, \n A média entre eles é {media} \n O maior valor é {maior} \n E o menor {menor}')
 
