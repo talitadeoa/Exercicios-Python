@@ -20,7 +20,7 @@ while state == 'S':
     state = '0'
 
     while state not in 'SN':
-        state = input('Deseja continuar? [S/N]: ').strip().upper()  
+        state = input('Deseja continuar? [S/N]: ').strip().upper()[0]  
 
 print(f' Você digitou {count} valores, \n A média entre eles é {media} \n O maior valor é {maior} \n E o menor {menor}')
 
