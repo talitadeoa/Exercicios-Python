@@ -5,7 +5,7 @@
 numero = int(input('Digite o número que deseja saber o fatorial '))
 fatorial = 0
 
-while numero > 1:
+while numero > 0:
     fatorial += numero*numero-1
     numero = numero - 1
 
