@@ -5,4 +5,4 @@ r = int(input('E qual a razão? '))
 x = pt + (10-1) * r
 
 for i in range (pt, x+r, r):
-    print(i, end=' ')
+    print(i, '->', end=' ')
