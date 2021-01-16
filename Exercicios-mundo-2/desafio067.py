@@ -7,7 +7,10 @@ while True:
     if n < 0:
         break
     print(f'\n A tabuada de {n} é:')
-    while count < 11:
+    for i in range (0,11):
         print(f'{n} x {count} = {result}')
         count += 1
         result = n*count
+    print('-'*20)
+    count = 0
+print('\nEncerrando calculadora')
