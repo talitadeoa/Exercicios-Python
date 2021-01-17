@@ -5,11 +5,10 @@ from random import randint
 number = victories = result = 0
 pc_number = randint(0,10)
 eo = ''
-mood = True
+perdeu = False
+number = int(input('Digte um número '))
 
-while mood:
-    while number != [0:10]:
-        number = int(input('Digte um número '))
+while not perdeu:
     while eo not in ['P','I']:
         eo = input('Par ou Ímpar? [P/I] ').upper()
     result = pc_number+number
@@ -23,8 +22,8 @@ while mood:
         if result%2 != 0:
             print(f'Você escolheu {number} e o pc escolheu {pc_number} deu ÍMPAR, você ganhou!')
             victories += 1
-            mood = False
+            perdeu = True
         else:
             print(f'Você jogou {number} e o pc {pc_number} deu PAR! Você perdeu \n você teve {victories} vitórias consecutivas')
-            mood = False
+            perdeu = True
     
