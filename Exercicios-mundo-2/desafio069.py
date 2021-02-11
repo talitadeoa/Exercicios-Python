@@ -20,11 +20,11 @@ while stop is not True:
         gender = (input(f'Digitde o sexo da {p}ª pessoa: [M/F] ').upper())
     genders.append(gender)
 
+    if gender == 'M':
+        men.append(p)
     if age >= 18:
         p18.append(p)
-    elif gender == 'M':
-        men.append(p)
-    elif gender == 'F' and age < 20:
+    if gender == 'F' and age < 20:
         wlt20.append(p)
 
     while stop not in ['S','N']:
@@ -35,9 +35,7 @@ while stop is not True:
         p+=1
         stop = False
 
-print(f'\nidades {ages} \ngeneros {genders} \nde maior {p18} \nmachos {men} \nwmenos20{wlt20}')
-
-#print(f'{len(p18)} Pessoas são maiores de 18 anos \n{len(man)} São homens \n{len(wlt20)} São mulheres com menos de 20')
+print(f'{len(p18)} Pessoas são maiores de 18 anos \n{len(men)} São homens \n{len(wlt20)} São mulheres com menos de 20')
 
 
     
