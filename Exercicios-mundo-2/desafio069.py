@@ -7,7 +7,7 @@ genders = []
 p18 = []
 man = []
 wlt20 = []
-stop = False
+stop = Falsea
 
 while stop is not True:
     age = int(input(f'Digite a idade da {p+1}ª pessoa: '))
