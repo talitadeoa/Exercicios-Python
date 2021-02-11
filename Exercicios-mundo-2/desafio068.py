@@ -4,26 +4,28 @@ from random import randint
 
 number = victories = result = 0
 pc_number = randint(0,10)
-eo = ''
+pi = ''
 perdeu = False
-number = int(input('Digte um número '))
 
-while not perdeu:
-    while eo not in ['P','I']:
-        eo = input('Par ou Ímpar? [P/I] ').upper()
+while perdeu is False:
+    while pi not in ['P','I']:
+        pi = input('Par ou Ímpar? [P/I] ').upper()
+    if pi == 'P':
+        pi = 'PAR'
+    elif pi == "I":
+        pi = 'ÍMPAR'
+    number = int(input('Digite um número... '))
     result = pc_number+number
-    if eo =='P':
-        if result%2 == 0:
-            print(f'Você jogou {number} e o pc {pc_number} deu PAR, você ganhou!')
-            victories += 1
-        else:
-            print(f'Você jogou {number} e o pc {pc_number} deu ÍMPAR! Você perdeu')    
-    elif eo == 'I':
-        if result%2 != 0:
-            print(f'Você escolheu {number} e o pc escolheu {pc_number} deu ÍMPAR, você ganhou!')
-            victories += 1
-            perdeu = True
-        else:
-            print(f'Você jogou {number} e o pc {pc_number} deu PAR! Você perdeu \n você teve {victories} vitórias consecutivas')
-            perdeu = True
+    if pi == 'PAR' and result%2 == 0:
+        print(f'Você jogou {number} e o pc {pc_number}, {result} é {pi}, você ganhou! ')
+        victories += 1  
+    elif pi == 'ÍMPAR' and result%2 != 0:
+        print(f'Você jogou {number} e o pc jogou {pc_number}, {result} é {pi}, você ganhou! ')
+        victories += 1
+    else:
+        print(f'Você jogou {number} e o pc jogou {pc_number}, {result} não é {pi}, você perdeu ')
+        perdeu = True
+
+print(f'Você teve {victories} vitórias consecutivas!')
+
     
