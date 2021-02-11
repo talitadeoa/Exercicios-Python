@@ -1,9 +1,9 @@
 #Um programa que lê idade e sexo de várias pessoas no final informa quantos sao maiores de 18, quantos são homens e quantas mulheres tem menos de 20 anos
 
 p = 1
-age = 0
+#age = 0
 ages = []
-gender = ''
+#gender = ''
 genders = []
 p18 = []
 men = []
