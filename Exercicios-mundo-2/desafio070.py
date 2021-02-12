@@ -10,6 +10,7 @@ stop = False
 while stop is not True: 
     product = input('Qual o produto? ')
     shopping.append(product)
+    price = int(input('Qual o valor do produto? R$'))
     while price == 0:
         price = int(input('Qual o valor do produto? R$'))
     prices.append(price)
@@ -25,4 +26,4 @@ while stop is not True:
     elif stop == 'N':
         stop = True
 
-print(f'O total das compras foi: {sum(prices)} \n{len(mt1000)} Produtos custaram mais de R$1000 \n o produto mais barato foi {cheapest}')        
+print(f'O total das compras foi: R${sum(prices)} \n{len(mt1000)} Produtos custaram mais de R$1000 \nO produto mais barato foi {shopping[cheapest]}')        
