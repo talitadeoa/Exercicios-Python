@@ -1,12 +1,8 @@
-#Um programa que joga par ou impar, mas que o jogo só para quando o usuario perde, ao final mostra quantas vitorias consecutivas teve
-
 from random import randint
-
 number = victories = result = 0
 pc_number = randint(0,10)
 pi = ''
 perdeu = False
-
 while perdeu is False:
     while pi not in ['P','I']:
         pi = input('Par ou Ímpar? [P/I] ').upper().strip()[0]
@@ -25,7 +21,4 @@ while perdeu is False:
     else:
         print(f'Você jogou {number} e o pc jogou {pc_number}, {result} não é {pi}, você perdeu ')
         perdeu = True
-
 print(f'Você teve {victories} vitórias consecutivas!')
-
-    
