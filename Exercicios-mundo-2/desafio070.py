@@ -10,5 +10,9 @@ stop = False
 
 while stop is not False: 
     product = input('Qual o produto? ')
+    shopping.append(product)
     while price < 0:
         price = input('Qual o valor do produto? R$')
+    prices.append(price)
+
+print(f'O total das compras foi: {sum(prices)}')        
