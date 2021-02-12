@@ -5,13 +5,11 @@ n = result = count = 0
 while True:
     n = int(input('Quer ver a tabuada de qual valor? '))
     print('-'*30)
-    if n <= 0:
+    if n < 0:
         break
-    print(f'\nA tabuada de {n} é:')
-    while count <= 10:
+    print(f'A tabuada de {n} é:')
+    for count in range(1,11):
         result = n*count
         print(f'{n} x {count} = {result}')
-        count += 1
     print('-'*20)
-    count = 0
 print('\nEncerrando tabuada')
