@@ -8,6 +8,9 @@ men = []
 wlt20 = []
 
 while True:
+    print('-' * 25)
+    print('   CADASTRE UMA PESSOA')
+    print('-' * 25)
     age = int(input(f'Digite a idade da {p}ª pessoa: '))
     while age < 0:
         age = int(input(f'Digite a idade da {p}ª pessoa: '))        
@@ -31,7 +34,7 @@ while True:
     else:
         p+=1
 
-print(f'{len(p18)} Pessoas são maiores de 18 anos \n{len(men)} São homens \n{len(wlt20)} São mulheres com menos de 20')
+print(f'\n{len(p18)} Pessoas são maiores de 18 anos \n{len(men)} São homens \n{len(wlt20)} São mulheres com menos de 20')
 
 
     
