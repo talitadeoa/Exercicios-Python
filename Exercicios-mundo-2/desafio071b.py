@@ -1,17 +1,18 @@
 #Um programa que simula um caixa eletrônico
 #O usuario informa o value que deseja sacar e o programa calcula em quantas notas de $50, $20, $10, ou $1 será feito o saque
 
-value = int(input('Qual o valor que você deseja sacar? R$')
-(total) = value
-(bill) = 50
-(totalbill) = 0
+value = int(input('Qual o value que você deseja sacar? R$'))
+total = value
+bill = 50
+totalbill = 0
 
-while True
+while True:
     if total >= bill:
         total -= bill
         totalbill += 1
     else:
-        print(f'{totalbill} notas de R${bill:.2f}')
+        if totalbill > 0:
+            print(f'{totalbill} notas de R${bill:.2f}')
         if bill == 50:
             bill = 20    
         elif bill == 20:
