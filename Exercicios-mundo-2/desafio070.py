@@ -29,4 +29,3 @@ while True:
 
 print(f'O total das compras foi: R${sum(prices):.2f} \n{len(mt1000)} Produtos custaram mais de R$1000 \nO produto mais barato foi {shopping[cheapest-1]} que custou {prices[cheapest-1]} ')        
 
-#{}
