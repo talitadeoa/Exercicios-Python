@@ -14,13 +14,9 @@ while True:
     count+=1
     if price >= 1000:
         mt1000.append(price)
-    if count == 1:
+    if count == 1 or price < cp:
         cp = price
         cheapest = count
-    else:
-        if price < cp:
-            cp = price
-            cheapest = count
     stop = ''
     while stop not in ['S','N']:
         stop = input('Deseja cadastrar mais um produto? [S/N] ').upper()
@@ -29,4 +25,3 @@ while True:
 
 print('{:=^40}'.format(' Fim do programa '))
 print(f'O total das compras foi: R${sum(prices):.2f} \n{len(mt1000)} Produtos custaram mais de R$1000 \nO produto mais barato foi {shopping[cheapest-1]} que custou R${prices[cheapest-1]:.2f} ')        
-
