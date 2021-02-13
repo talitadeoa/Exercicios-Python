@@ -4,8 +4,9 @@
 value =  int(input('Qual o valor que você deseja sacar? R$')
 total = value
 bill = 50
+totalbill = 0
 
 while True
-    if total < 0:
-        total =
+    if total >= bill:
+        total -= bill
     
