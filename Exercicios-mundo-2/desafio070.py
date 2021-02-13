@@ -13,11 +13,13 @@ while True:
     prices.append(price)
     count+=1
     if price >= 1000:
-        mt1000.append(p)
+        mt1000.append(price)
     if count == 1:
-        cheapest = price
+        cp = price
+        cheapest = count
     else:
-        if price < cheapest:
+        if price < cp:
+            cp = price
             cheapest = count
     stop = ''
     while stop not in ['S','N']:
@@ -25,6 +27,6 @@ while True:
     if stop == 'N':
         break
 
-print(f'O total das compras foi: R${sum(prices):.2f} \n{len(mt1000)} Produtos custaram mais de R$1000 \nO produto mais barato foi {shopping[cheapest]} custando ')        
+print(f'O total das compras foi: R${sum(prices):.2f} \n{len(mt1000)} Produtos custaram mais de R$1000 \nO produto mais barato foi {shopping[cheapest-1]} que custou {prices[cheapest-1]} ')        
 
-#{prices[cheapest-1]}
+#{}
