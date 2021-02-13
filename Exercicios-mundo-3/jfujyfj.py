@@ -1,1 +1,1 @@
-lanche = (hamb, suco, pizza, pudim)
+lanche = ('hamb', 'suco', 'pizza', 'pudim')
