@@ -27,5 +27,6 @@ while True:
     if stop == 'N':
         break
 
+print('{:=^40}'.format(' Fim do programa '))
 print(f'O total das compras foi: R${sum(prices):.2f} \n{len(mt1000)} Produtos custaram mais de R$1000 \nO produto mais barato foi {shopping[cheapest-1]} que custou R${prices[cheapest-1]:.2f} ')        
 
