@@ -1,0 +1,1 @@
+lanche = (hamb, suco, pizza, pudim)
