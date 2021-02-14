@@ -8,7 +8,7 @@ brasileirao = ('Internacional', 'Flamengo', 'AtléticoMG',' São Paulo','Flumine
 
 option = ''
 
-while option not in 'a,b,c,d':
+while option not in 'abcd':
     option = input('''O que você desejaa saber?  
 a) Os 5 primeiros
 b) Os 4 últimos colocados
