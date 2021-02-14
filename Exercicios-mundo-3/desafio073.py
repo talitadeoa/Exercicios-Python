@@ -9,7 +9,7 @@ brasileirao = ('Internacional', 'Flamengo', 'AtléticoMG','São Paulo','Fluminen
 option = ''
 resume = ''
 
-while option not in 'abcd':
+while option not in ['a','b','c','d']:
     option = input('''O que você deseja saber?  
 a) Os 5 primeiros
 b) Os 4 últimos colocados
@@ -23,3 +23,13 @@ elif option == 'b':
     print(brasileirao[-4:])
 elif option == 'c':
     print(sorted(brasileirao))
+elif option == d:
+    print(f'O time {option} está na posição {}')
+
+while resume not in ['S','N']:
+    resume = ('Deseja voltar para o menu? [S/N]').upper().strip()[0]
+if resume == 'S':
+    option = ''
+else:
+    print('Encerrando...')
+    
