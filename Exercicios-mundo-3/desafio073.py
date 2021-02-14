@@ -4,7 +4,7 @@
 #c) Ordem alfabética
 #d) Em qual posição tá o time x
 	
-brasileirao = ('Internacional', 'Flamengo', 'AtléticoMG','São Paulo','Fluminense' ,'Grêmio' ,'Palmeiras', 'Santos', 'Corinthians', 'Bragantino', 'AthleticoPR', 'Ceará', 'AtléticoGO', 'Sport', 'Fortaleza', 'Bahia', 'Vasco', 'Goiás', 'Coritiba', 'Botafogo')
+brasileirao = ('Internacional', 'Flamengo', 'Atlético-MG','São Paulo','Fluminense' ,'Grêmio' ,'Palmeiras', 'Santos', 'Corinthians', 'Bragantino', 'Athletico-PR', 'Ceará', 'Atlético-GO', 'Sport', 'Fortaleza', 'Bahia', 'Vasco', 'Goiás', 'Coritiba', 'Botafogo')
 
 option = ''
 resume = ''
@@ -23,8 +23,9 @@ elif option == 'b':
     print(brasileirao[-4:])
 elif option == 'c':
     print(sorted(brasileirao))
-elif option == d:
-    print(f'O time {option} está na posição {}')
+elif option == 'd':
+    pos = brasileirao.find('option')
+    print(f'O time {option} está na posição {pos}')
 
 while resume not in ['S','N']:
     resume = ('Deseja voltar para o menu? [S/N]').upper().strip()[0]
