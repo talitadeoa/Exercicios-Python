@@ -2,10 +2,22 @@
 
 from random import randint
 
-a= randint()
-b= randint()
-c= randint()
-d= randint()
-e= randint()
+a= randint(0,10)
+b= randint(0,10)
+c= randint(0,10)
+d= randint(0,10)
+e= randint(0,10)
+menor = a
+maior = a
 
 tupla = (a,b,c,d,e)
+
+for n in (tupla):
+    if n > maior:
+        maior = n
+    if n < menor:
+        menor = n
+
+print(tupla)
+print(f'maior: {maior}' )
+print(f'menor: {menor}' )
