@@ -3,29 +3,25 @@
 #b) Em que posição foi digitado o primeiro 3
 #c) Quais os números pares
 
-from random import randint
-
-a= randint(0,10)
-b= randint(0,10)
-c= randint(0,10)
-d= randint(0,10)
+for i in range [a,b,c,d]:
+    i= int(input('Qual '))
 
 tupla = (a,b,c,d)
 
 nine = tupla.count(9)
 
-for n in tupla:
-    if n == 3:
-        f3 = tupla.index(3)
-    elif:
-        f3 = 'nenhuma' 
+if tupla.count(3) == 0:
+    f3 = 'nenhuma' 
+else:
+    f3 = tupla.index(3)
 
 evens = []
 odds = []
 
 for n in tupla:
-    if n % 2 == 0 and n is not 0:
+    if n % 2 == 0 and n != 0:
         evens.append(n)
+#        print(n,',',end=' ')
     else:
         odds.append(n)
 
