@@ -24,8 +24,9 @@ elif option == 'b':
 elif option == 'c':
     print(sorted(brasileirao))
 elif option == 'd':
-    pos = brasileirao.find('option')
-    print(f'O time {option} está na posição {pos}')
+    team = input('Qual time você deseja saber a posição? ')
+    pos = brasileirao.index(team)
+    print(f'O time {team} está na posição {pos+1}')
 
 while resume not in ['S','N']:
     resume = ('Deseja voltar para o menu? [S/N]').upper().strip()[0]
