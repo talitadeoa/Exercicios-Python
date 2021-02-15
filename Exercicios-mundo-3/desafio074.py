@@ -2,4 +2,10 @@
 
 from random import randint
 
-tupla = ()
+a= randint()
+b= randint()
+c= randint()
+d= 
+e=
+
+tupla = (a,b,c,d,e)
