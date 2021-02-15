@@ -2,9 +2,13 @@
 
 products = ('leite', 3.00, 'arroz', 127.00, 'chocolate', 6.00, 'feijao', 9.00)
 
-print('-'*40)
-print('{: ^40}'.format(' Listagem de produtos '))
-print('-'*40)
+print('--'*20)
+print(f'Listagem de produtos{:^40}')
+print('--'*20)
 
-for p in range (0,len(products),2):
-    print(f"{products[p]:.<30}", f"R${products[p+1]:>7.2f}")
+for i in products:
+    if type(i) is str:
+        print(f'{i:.<30}', end='')
+    else:
+        print(f'R$ {i:>7.2f}')
+print('--'*20)
