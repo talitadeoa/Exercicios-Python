@@ -5,7 +5,7 @@ from random import randint
 a= randint()
 b= randint()
 c= randint()
-d= 
-e=
+d= randint()
+e= randint()
 
 tupla = (a,b,c,d,e)
