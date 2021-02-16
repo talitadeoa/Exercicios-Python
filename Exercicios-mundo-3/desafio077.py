@@ -6,6 +6,6 @@ vowel = 0
 totalvowel = 0
 
 for i in tupla:
-    if 'a','e','i','o','u' in i: 
+    if:
         vowel += 1
     print(f'A palavra {i} tem {vowel} vogais')
