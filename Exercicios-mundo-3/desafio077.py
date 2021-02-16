@@ -1,11 +1,10 @@
 #Um programa que informas quantas vogais tem cada palavraa de uma tupla
 
-tupla = ('pao', 'feijao', 'macarrao', 'sal', 'suco', 'arroz')
+words = ('pao', 'feijao', 'macarrao', 'sal', 'suco', 'arroz')
+vowel = ['a','e','i','o','u']
 
-vowel = 0
-totalvowel = 0
-
-for i in tupla:
-    if:
-        vowel += 1
-    print(f'A palavra {i} tem {vowel} vogais')
+for word in words:
+    print(f'\nA palavra {word.upper()} tem as vogais: ', end='')
+    for i in word:
+        if i.lower() in vowel:
+            print(i, end=' ')

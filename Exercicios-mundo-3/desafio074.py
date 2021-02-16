@@ -8,8 +8,8 @@ c= randint(0,10)
 d= randint(0,10)
 e= randint(0,10)
 
-tupla = (a,b,c,d,e)
+numbers = (a,b,c,d,e)
 
-print(tupla)
-print(f'maior: {max(tupla)}' )
-print(f'menor: {min(tupla)}' )
+print(numbers)
+print(f'maior: {max(numbers)}' )
+print(f'menor: {min(numbers)}' )
