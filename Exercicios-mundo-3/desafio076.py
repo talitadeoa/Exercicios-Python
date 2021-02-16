@@ -3,7 +3,7 @@
 products = ('leite', 3.00, 'arroz', 127.00, 'chocolate', 6.00, 'feijao', 9.00)
 
 print('--'*20)
-print(f'Listagem de produtos{:^40}')
+print(f'{"Listagem de produtos": ^40}')
 print('--'*20)
 
 for i in products:
