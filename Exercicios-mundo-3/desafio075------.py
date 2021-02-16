@@ -13,7 +13,7 @@ nine = tupla.count(9)
 if tupla.count(3) == 0:
     f3 = 'nenhuma' 
 else:
-    f3 = tupla.index(3)
+    f3 = tupla.index(3)+1
 
 evens = []
 odds = []
