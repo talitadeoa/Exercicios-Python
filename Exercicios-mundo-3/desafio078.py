@@ -8,15 +8,17 @@ for n in range(0,5):
 
     if n == 0:
         b = num
-        pb = n
+        pb.append(n)
         s = num
-        ps = n
-    if num > b:
-        pb = n
+        ps.append(n)
+    if num >= b:        
         b = num
-    if num < s:
-        ps = n
+        pb.append(n)
+
+    if num <= s:
         s = num
+        ps.append(n)
+
 
 print(f'''\nOs valores inseridos foram: {numbers}
 O maior valor é {b} na posição {pb}
