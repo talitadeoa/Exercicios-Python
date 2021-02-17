@@ -2,10 +2,22 @@
 
 numbers = []
 
-for n in range(0,6):
-    num = int(input('Digite o {n}º número...'))
+for n in range(0,5):
+    num = int(input(f'Digite o {n+1}º número: '))
     numbers.append(num)
 
-if n == 0:
-    b = num
-    s = num
+    if n == 0:
+        b = num
+        pb = n
+        s = num
+        ps = n
+    if num > b:
+        pb = n
+        b = num
+    if num < s:
+        ps = n
+        s = num
+
+print(f'''\nOs valores inseridos foram: {numbers}
+O maior valor é {b} na posição {pb}
+O menor {s} na posição {ps} ''')
