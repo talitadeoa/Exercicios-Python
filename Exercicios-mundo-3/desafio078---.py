@@ -1,6 +1,7 @@
 #Um programa que lê 5 valores, armazena em uma lista e ao final mostra o maior e menor e suas respectivas posições na lista
 
 numbers = []
+pb = ps = 0
 
 for n in range(0,5):
     num = int(input(f'Digite o {n+1}º número: '))
