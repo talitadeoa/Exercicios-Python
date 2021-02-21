@@ -14,7 +14,7 @@ while True:
     if stop in 'N':
         break
 
-for i, num in enumarate(nums):
+for i, num in enumerate(nums):
     if num % 2 == 0:
         evens.append(num)
     else: 
