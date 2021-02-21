@@ -1,7 +1,7 @@
 #Um programa que recebe varios valores, os lista e separa pares e ímpares
 
 nums = []
-odds = []
+odd = []
 evens = []
 
 while True:
@@ -14,3 +14,12 @@ while True:
     if stop in 'N':
         break
 
+for num in nums:
+    if num % 2 == 0:
+        evens.append(num)
+    else: 
+        odd.append(num)
+
+print(f'''Números digitados {nums}
+Números pares: {evens}
+Números ímpares: {odd}''')
