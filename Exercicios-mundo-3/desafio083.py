@@ -9,14 +9,8 @@ for l in expression:
         countl += 1
     elif ')' == l:
         countr += 1
-    sumrl = (countl+countr)%2
-    elif sumrl!=0 :  
-        print('Expressão inválida')
+    sumrl = ((countl+countr)%2)
+#    elif sumrl!=0:
     
-    stop = ''
-    while stop not in ['S','N']:
-        stop = input('Deseja continuar? [S/N] ').strip().upper()[0]
-    if stop in 'N':
-        break
     
-print('Expressão válida!')
+print(sumrl)
