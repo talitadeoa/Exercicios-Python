@@ -12,11 +12,11 @@ while True:
         stop = input('Deseja continuar? [S/N] ').strip().upper()[0]
     if stop in 'N':
         break
-nums.sort(reverse=)
+nums.sort(reverse=True)
 for i in nums:
     if i == 5:
         hasfive += 1
 
-print(f'''Você digitou {len(nums)} números
+print(f'''\nVocê digitou {len(nums)} números
 A lista de números em ordem decrescente é: {nums}
 O número 5 foi inserido {hasfive} vezes''')
