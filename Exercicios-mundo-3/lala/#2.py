@@ -7,4 +7,14 @@ nowm = int(input('Que minutos são? '))
 option = int(input('Deseja saber que horas são [+] ou [-]? [1/0] '))
 
 if option == 1:
-    plus 
+    plus == int(input('Deseja adcionar quantos minutos? '))
+    if nowm + plus >= 60:
+        nowh + 1
+        if nowm + plus - 60 > 0:
+            resm = nowm + plus - 60
+elif option == 0:
+    less == int(input('Deseja tirar quantos minutos? '))
+    if nowm + less >= 60:
+        nowh + 1
+        if nowm + less - 60 > 0:
+            resm = nowm + less - 60    
