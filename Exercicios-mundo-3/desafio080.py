@@ -9,10 +9,10 @@ for n in range (0,5):
 
     else: 
         pos = 0
-    while pos < len(nums):
-        if num <= nums[pos]:
-            nums.insert(pos, n)
-            break
-        pos += 1
+        while pos < len(nums):
+            if num <= nums[pos]:
+                nums.insert(pos, n)
+                break
+            pos += 1
 
-print(numsor)
+print(nums)
