@@ -1,0 +1,1 @@
+#Crie uma função que mostra os índices de uma lista

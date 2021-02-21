@@ -19,7 +19,6 @@ for n in range(0,5):
         s = num
         ps.append(n)
 
-
 print(f'''\nOs valores inseridos foram: {numbers}
 O maior valor é {b} na posição {pb}
 O menor {s} na posição {ps} ''')
