@@ -2,6 +2,7 @@
 #Tente outra forma usando o clear
 
 people = []
+weights = []
 heaviest = 0
 thinner = 0
 person = 1
@@ -15,9 +16,9 @@ while True:
     people.append(weight)
     if weight >= heaviest:
         heaviest = weight
-    for i in range(0,len(people),2):
-        if i >= heaviest:
-            fatty.append(people[i-1])
+    for i, w in enumerate(weights):
+        if w == heaviest:
+            fatty.append(people[i])
     stop = ''
     while stop not in ['S','N']:
         stop = input('Deseja continuar? [S/N] ').strip().upper()[0]
