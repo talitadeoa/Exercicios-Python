@@ -17,7 +17,7 @@ while True:
     if weight > heaviest:
         heaviest = weight
     for count, w in enumerate(weights):
-        if w == heaviest:
+         if w == heaviest:
             fatty.append(people[count])
     stop = ''
     while stop not in ['S','N']:
