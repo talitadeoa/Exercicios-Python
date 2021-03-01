@@ -13,17 +13,16 @@ while True:
     people.append(name)
     weight = int(input(f'Digite o peso da {person}ª pessoa '))
     people.append(weight)
-    person += 1
     if weight >= heaviest:
         heaviest = weight
-    for w in range(len(weight)):
+    for w in range(0,len(people),2):
         if w >= heaviest:
             fatty.append(w)
-
     stop = ''
     while stop not in ['S','N']:
         stop = input('Deseja continuar? [S/N] ').strip().upper()[0]
     if stop in 'N':
         break
+    person += 1
 print(f'''Foram adcionadas {person} pessoas
 A mais pesada tem {heaviest} Kg. São: {fatty} ''')
