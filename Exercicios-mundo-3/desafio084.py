@@ -13,12 +13,12 @@ while True:
     name = str(input(f'Digite o nome da {person}ª pessoa '))
     people.append(name)
     weight = int(input(f'Digite o peso da {person}ª pessoa '))
-    people.append(weight)
-    if weight >= heaviest:
+    weights.append(weight)
+    if weight > heaviest:
         heaviest = weight
-    for i, w in enumerate(weights):
+    for count, w in enumerate(weights):
         if w == heaviest:
-            fatty.append(people[i])
+            fatty.append(people[count])
     stop = ''
     while stop not in ['S','N']:
         stop = input('Deseja continuar? [S/N] ').strip().upper()[0]
