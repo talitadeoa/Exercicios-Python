@@ -9,5 +9,6 @@ for i in range(0,4):
         values[0].append(temp[i])
     else:
         values[1].append(temp[i])      
-
+values[0].sort()
+values[1].sort()
 print(values)
