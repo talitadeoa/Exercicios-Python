@@ -3,11 +3,11 @@
 values = [[],[]]
 temp = []
 
-for i in range(0,7):
+for i in range(0,4):
     temp.append(int(input('Digite um valor_')))
     if temp[i]%2==0:
-        values.insert(values[0][0], temp[i])
+        values[0].append(temp[i])
     else:
-        values.insert(values[1],[0], temp[i])      
+        values[1].append(temp[i])      
 
 print(values)
