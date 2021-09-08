@@ -1,11 +1,14 @@
 #Programa que cria uma matriz 3x3 com números inseridos pelo usuário
 
 array = [[[],[],[]],[[],[],[]],[[],[],[]]]
+temp = []
 
 for i in range (0,9):
     value = int(input(f'Digite o número para a posição [,]'))
+
     if i <= 2:
-        array[0].append(value)
+        array[0].append(temp)
+        array
     if i > 2 and i <= 5:
         array[1].append(value)        
     if i > 5:
