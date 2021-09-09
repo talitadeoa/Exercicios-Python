@@ -8,7 +8,8 @@ array = []
 arrayx = [[],[],[]]
 arrayy = [[],[],[]]
 even = []
-x = y = 0
+#y3 = []
+x = y = maxy3 = 0
 
 for i in range (0,9):
     if i <= 2:
@@ -18,10 +19,10 @@ for i in range (0,9):
     if i > 5 and i <= 8:
         x = 2
     temp.append(int(input(f'Digite o número para a posição [{x},{y}] ')))
-    array.append(temp[:])       
-    arrayx[x].append(temp[0])    
-    arrayy[y].append(temp[0]) 
-    temp.clear()       
+    array.append(temp[:])         
+    arrayx[x].append(temp[:])    
+    arrayy[y].append(temp[:])    
+    temp.clear()      
     y += 1  
     if y >= 3:
         y = 0   
@@ -29,10 +30,9 @@ for i in range (0,9):
     if array[i][0] %2 == 0:
         even.append(array[i][0])    
 
-for i in range (len(array)):
-    print(f'{array[i]}')
+for i in range (len(arrayx)):
+    print(arrayx[i])
 
-print(f'''
-A soma de todos os valores pares é {sum(even)}
-A soma dos valores da terceira coluna é {sum(arrayy[2])}
-O maior valor da segunda linha é {max(arrayx[1])}''')
+print(f'\n{arrayy}')
+
+#sum(even)    
