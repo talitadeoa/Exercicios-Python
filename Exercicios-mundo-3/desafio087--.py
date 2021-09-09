@@ -3,12 +3,13 @@
 #b)Soma de valores da terceira coluna
 #c)Maior valor da segunda linha
 
+temp = []
 array = []
 arrayx = [[],[],[]]
-temp = []
-y3 = []
+arrayy = [[],[],[]]
 even = []
-x = y = toteven = maxy3 = 0
+#y3 = []
+x = y = maxy3 = 0
 
 for i in range (0,9):
     if i <= 2:
@@ -18,28 +19,21 @@ for i in range (0,9):
     if i > 5 and i <= 8:
         x = 2
     temp.append(int(input(f'Digite o número para a posição [{x},{y}] ')))
-    array.append(temp[:]) 
-    if x == 0:
-        arrayx[0].append(temp[:])
-    elif x == 1:
-        arrayx[1].append(temp[:])
-    elif x == 2:
-        arrayx[2].append(temp[:])
-    temp.clear()   
+    array.append(temp[:])         
+    arrayx[x].append(temp[:])    
     y += 1  
     if y >= 3:
         y = 0   
+    arrayy[y].append(temp[:])    
+    temp.clear()   
 
     if array[i][0] %2 == 0:
-        even.append(array[i][0])
-        
-toteven = sum(even)    
+        even.append(array[i][0])    
+
+
 
 for i in range (len(arrayx)):
-    y3 = sum(arrayx[i][2])
+    print(arrayx[i])
 
-#print(f'''{arrayx[0]}
-#{arrayx[1]}
-#{arrayx[2]}''')
-#print(even,toteven)
-print(y3)
+#sum(even)    
+
