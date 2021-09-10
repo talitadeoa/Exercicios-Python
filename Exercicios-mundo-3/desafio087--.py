@@ -3,36 +3,24 @@
 #b)Soma de valores da terceira coluna
 #c)Maior valor da segunda linha
 
+array = [[[],[],[]],[[],[],[]],[[],[],[]]]
 temp = []
-array = []
-arrayx = [[],[],[]]
-arrayy = [[],[],[]]
-even = []
-x = y = 0
-
-for i in range (0,9):
-    if i <= 2:
-        x = 0
-    if i > 2 and i <= 5:
-        x = 1
-    if i > 5 and i <= 8:
-        x = 2
-    temp.append(int(input(f'Digite o número para a posição [{x},{y}] ')))
-    array.append(temp[:])       
-    arrayx[x].append(temp[0])    
-    arrayy[y].append(temp[0]) 
-    temp.clear()       
-    y += 1  
-    if y >= 3:
-        y = 0   
-
-    if array[i][0] %2 == 0:
-        even.append(array[i][0])    
-
-for i in range (len(array)):
-    print(f'{array[i]}')
+x = y = sum_evens = sum_y2 = max_x1 = 0
+ 
+for x in range (0,3):
+    for y in range(0,3):
+        array[x][y] = int(input(f'Digite o número para a posição [{x},{y}] '))
+for x in range (0,3):
+    for y in range(0,3):
+        print(f'[{array[x][y]:^5}]', end='')   
+        if array[x][y] % 2 == 0:
+            sum_evens += array[x][y]
+    print()
+for y in (0,3):
+    sum_y2 += array[y][2]
+for in
 
 print(f'''
-A soma de todos os valores pares é {sum(even)}
-A soma dos valores da terceira coluna é {sum(arrayy[2])}
-O maior valor da segunda linha é {max(arrayx[1])}''')
+A soma de todos os valores pares é {sum_evens}
+A soma dos valores da terceira coluna é {sum_y2}
+O maior valor da segunda linha é {max_x1}''')
