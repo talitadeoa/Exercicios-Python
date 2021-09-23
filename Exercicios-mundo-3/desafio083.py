@@ -1,4 +1,4 @@
-#Um programa que analisa se uma expressão é valida
+#Um programa que analisa se uma expressão é valida seguindo o parâmetro de que todos os parenteses estejam fechados
 
 expression = input('Digite a expressão que deseja analisar: ')
 stack = []
@@ -10,7 +10,7 @@ for char in expression:
         if len(stack)>0:
             stack.pop()
         else:
-            stack.append('(')
+            stack.append(')')
             break
 
 if len(stack)==0:

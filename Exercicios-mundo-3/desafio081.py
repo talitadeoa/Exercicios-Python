@@ -1,4 +1,4 @@
-#Um programa que lê inputs int do usuario e armazena em uma lista, mostra quantos números foram inseridos, lista decrescente e se o número 5 está na lista
+#Um programa que lê inputs int do usuario e armazena em uma lista, mostra quantos números foram inseridos, apresenta a lista em ordem decrescente e conta se e quantas vezes o número 5 está na lista
 
 nums = []
 hasfive = 0
