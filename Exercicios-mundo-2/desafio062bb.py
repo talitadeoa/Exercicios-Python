@@ -22,6 +22,6 @@ while vai != 0:
         pro += vai
     elif vai == 0:
         print(f'\nOK, fim do programa, foram mostradas {pro} progessões')
-    #else:
-    #    print('\nPo mano tu n digitou os dados certo, roda dnv aí então se quiser...')            
+    else:
+        print('\nPo mano tu n digitou os dados certo, roda dnv aí então se quiser...')            
 
