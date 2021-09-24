@@ -15,9 +15,9 @@ while True:
         state = input('Deseja continuar inserindo notas [S/N]? ').lower()
     if state == 'n':
         break
+    
 print('-='*30)
-print(f'''Boletim de notas:\n
-{"No.":<4}{"Aluno(a)":<10}{"Média":<8}\n''')
+print(f'{"No.":<4}{"Aluno(a)":<10}{"Média":<8}')
 print('-'*26)
 for i, s in enumerate(report):
     print(f'{i:<4}{report[i][0]:<10}{media:<8.1f}')
