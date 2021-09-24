@@ -2,6 +2,7 @@
 
 report = []
 index = 0
+ind = ''
 
 while True:
     index += 1
@@ -15,9 +16,17 @@ while True:
         state = input('Deseja continuar inserindo notas [S/N]? ').lower()
     if state == 'n':
         break
-    
+
 print('-='*30)
 print(f'{"No.":<4}{"Aluno(a)":<10}{"Média":<8}')
 print('-'*26)
 for i, s in enumerate(report):
-    print(f'{i:<4}{report[i][0]:<10}{media:<8.1f}')
+    print(f'{i:<4}{s[0]:<10}{s[2]:<8.1f}')
+
+while True:
+    ind = int(input('\nDeseja visualizar as notas de um aluno específico? Se sim digite seu número [999 para interromper] '))
+    if ind == 999:
+        print('\ntiau')
+        break
+    if ind < len(report):
+         print(f'As notas de {report[ind][0]} foram: {report[ind][1]}')
