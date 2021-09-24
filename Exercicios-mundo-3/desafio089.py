@@ -16,7 +16,7 @@ while True:
     if state == 'n':
         break
 print('-='*30)
-print(f'''\nBoletim de notas:\n
+print(f'''Boletim de notas:\n
 {"No.":<4}{"Aluno(a)":<10}{"Média":<8}\n''')
 print('-'*26)
 for i, s in enumerate(report):
