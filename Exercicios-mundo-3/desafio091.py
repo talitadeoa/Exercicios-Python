@@ -5,5 +5,12 @@ import random
 game = []
 player = {}
 
-for i in range(4):
-    player[score]: random.randint(1,6)
+print("Números sorteados: ")
+
+for i in range(1,5):
+    player['score'] = random.randint(1,6)
+    print(f'O jogador {i} tirou {player["score"]}')
+#    if player['score'] > 0:
+
+for i in sorted(d, key = d.get, reverse=True):
+    print(i, d[i])
