@@ -4,14 +4,13 @@ from datetime import date
 year = date.today().year
 
 person = {'name': str(input("Qual seu nome ")), 'birth': int(input("Ano de nascimento ")), "ctps": int(input("Carteira de Trabalho (0 para não tem) "))}
-
 person['age'] = (year-person['birth'])
 
 if person['ctps'] > 0:
     person["hiring"] = int(input("Ano de contratação "))
     person["salary"] = int(input("Salário "))
-    person["retiring"] = (person["age"]+35)
-
+    person["retiring"] = person["age"]+(person["hiring"]+35)-year
+print()
 for k,v in person.items():
     print(f'{k}: {v}')
 
