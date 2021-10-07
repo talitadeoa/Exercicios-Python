@@ -11,3 +11,6 @@ else:
     aluno['status'] = 'Aprovado'
     
 print(f'\nO aluno {aluno["nome"]} com média {aluno["media"]} foi {aluno["status"]}')
+
+for k, v in aluno.items():
+    print(f"{k}: {v}")
