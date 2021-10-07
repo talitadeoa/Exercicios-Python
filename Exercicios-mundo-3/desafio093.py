@@ -5,7 +5,7 @@ goals = []
 
 for i in range(player['matches']):
     goals.append(int(input(f'Quantos gols na {i+1}ª partida ')))
-    player['goals'] = goals
+    player['goals'] = goals[:]
 
 print(f"\nO jogador {player['name']} participou em {player['matches']} partidas")
 for i in range(player['matches']):
