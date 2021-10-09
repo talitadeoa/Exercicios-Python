@@ -1,4 +1,4 @@
-#Programa que recebe dados de várias pessoas, como nome, idade e sexo, por fim cria uma lista e informa a quantidade de pessoas cadastradas, as mulheres e a média da idade entre elas e lista as pessoas com idade acima da média
+#Programa que recebe dados de várias pessoas, como nome, idade e sexo, por fim cria uma lista e informa a quantidade de pessoas cadastradas, todas mulheres cadastradas e a média de idade entre todas as pessoas e lista as pessoas com idade acima da média
 
 person= {}
 people = []
