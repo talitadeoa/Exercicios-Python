@@ -16,7 +16,7 @@ while True:
         if person['sex'] in 'FM:':
             break
         print('Por favor digite apenas M ou F.')
-    person.append(person.copy())
+    people.append(person.copy())
     while True:
         status = str(input('Deseja continuar? [S/N] ')).upper()[0]
         if status in 'SN':
@@ -24,14 +24,15 @@ while True:
         print('Por favor digite apenas S ou N.')
     if status == 'N':
         break
-average = (sum/len(person)) 
+average = (sum/len(people)) 
 
-print(f'''Foram cadastradas {len(person)} pessoas
+print(f'''Foram cadastradas {len(people)} pessoas
 A média de idade entre elas é {average:.1f} anos
-As mulheres cadastradas são 
-As pessoas que tem idade acima da média são: ''', end='')
-for p in people:
-    if person[i]['age'] > average:
-        above_average.append(person[i]['name'].copy())    
-
-print(above_average)
+As mulheres cadastradas são: ''', end = '')
+for person in people:
+    if person['sex'] in 'F':
+        print(f' {person["name"]}', end = '') 
+print('As pessoas que tem idade acima da média são: ', end='')
+for person in people:
+    if person['age'] >= average:
+        print(f' {person["name"]}', end = '')
