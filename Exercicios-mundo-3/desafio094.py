@@ -3,8 +3,9 @@
 person= {}
 people = []
 status = '0'
-sum = media = 0
-acima_media = []
+sum = average = 0
+woman = []
+above_average = []
 
 while True:
     person['name'] = str(input('Nome: '))
@@ -23,14 +24,14 @@ while True:
         print('Por favor digite apenas S ou N.')
     if status == 'N':
         break
-media = (sum/len(person)) 
+average = (sum/len(person)) 
 
 print(f'''Foram cadastradas {len(person)} pessoas
-A média de idade entre elas é {media:.1f} anos
+A média de idade entre elas é {average:.1f} anos
 As mulheres cadastradas são 
 As pessoas que tem idade acima da média são: ''', end='')
-for p in person:
-    if person[i]['age'] > media:
-        acima_media.append(person[i]['name'].copy())    
+for p in people:
+    if person[i]['age'] > average:
+        above_average.append(person[i]['name'].copy())    
 
-print(acima_media)
+print(above_average)

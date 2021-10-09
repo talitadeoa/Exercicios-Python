@@ -9,8 +9,8 @@ while True:
     name = input(f'Qual o nome do {index}º aluno? ')
     grade_1 = float(input('1ª Nota: '))
     grade_2 = float(input('2ª Nota: '))
-    media = (grade_1+grade_2)/2
-    report.append([name, [grade_1,grade_2], media])
+    average = (grade_1+grade_2)/2
+    report.append([name, [grade_1,grade_2], average])
     state = input('Deseja continuar inserindo notas [S/N]? ').lower()
     while state not in 'sn':
         state = input('Deseja continuar inserindo notas [S/N]? ').lower()
