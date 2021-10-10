@@ -18,7 +18,7 @@ while True:
 print('-='*21)
 print(f'{"Cod ":>4}{"Nome":<10}{"Gols ":<16}{"Total":<2}')
 print('-'*42)
-for i, player in enumerate(players):
+for k, v in enumerate(players):
     print(f'{i:>4}{player["name"]:<10}{player["goals"]}{player["total"]}')
 
 
