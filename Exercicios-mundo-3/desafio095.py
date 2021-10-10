@@ -3,11 +3,10 @@
 players = []
 
 while True:
-    player = {'name': str(input('Nome: ')), 'matches': int(input('Partidas jogadas: '))}
-    goals = []
+    player = {'name': str(input('Nome: ')), 'matches': int(input('Partidas jogadas: ')), 'goals': [0], 'total': 0}  
     for i in range(player['matches']):
-        goals.append(int(input(f'Quantos gols na {i+1}ª partida ')))
-        player['goals'] = goals[:]
+        player['goals'].append(int(input(f'Quantos gols na {i+1}ª partida ')))
+        player['total'] = sum(player['goals'])
     players.append(player.copy())    
     while True:
         status = str(input('Deseja continuar? [S/N] ')).upper()[0]
@@ -16,9 +15,10 @@ while True:
         print('Por favor digite apenas S ou N.')
     if status == 'N':
         break   
+print('-='*21)
+print(f'{"Cod ":>4}{"Nome":<10}{"Gols ":<16}{"Total":<2}')
+print('-'*42)
+for i, player in enumerate(players):
+    print(f'{i:>4}{player["name"]:<10}{player["goals"]}{player["total"]}')
 
 
-print(f"\nO jogador {player['name']} participou em {player['matches']} partidas")
-for i in range(player['matches']):
-    print(f'Na {i+1}ª partida => {goals[i]} gols')
-print(f'Totalizando {sum(player["goals"])} gols no campeonato')
