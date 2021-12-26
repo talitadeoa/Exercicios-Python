@@ -32,7 +32,7 @@ As mulheres cadastradas são: ''', end = '')
 for person in people:
     if person['sex'] in 'F':
         print(f' {person["name"]}', end = '') 
-print('As pessoas que tem idade acima da média são: ', end='')
+print('\nAs pessoas que tem idade acima da média são: ', end='')
 for person in people:
     if person['age'] >= average:
         print(f' {person["name"]}', end = '')
