@@ -19,9 +19,14 @@ while True:
         break   
     
 print('-='*21)
-print(f'{"Cod ":<4}{"Nome":<10}{"Gols ":<16}{"Total":>2}')
+print('cod ', end='')
+for i in player.keys():
+    print(f'{i:<15}', end='') 
+print()    
 print('-'*42)
 for c, player in enumerate(team):
-        print(f"{c:>a}' '{player['name']:<10}{player['goals']}{player['total']:>18}")
+    print(f'{c:>4}', end='')
+    for d in player.values():
+        print(f'{str(d):<15}', end='') 
+    print()           
 print('-----')
-print(team)
