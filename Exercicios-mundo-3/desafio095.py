@@ -20,8 +20,8 @@ while True:
     
 print('-='*21)
 print('cod ', end='')
-for i in player.keys():
-    print(f'{i:<15}', end='') 
+for k in player.keys():
+    print('{i:<15}', end='') 
 print()    
 print('-'*42)
 for c, player in enumerate(team):
