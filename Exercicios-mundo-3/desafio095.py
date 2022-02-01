@@ -18,18 +18,19 @@ while True:
     if status == 'N':
         break   
     
-print('-='*21)
+print('-='*30)
 print('cod ', end='')
 for k in player.keys():
-    print('{i:<15}', end='') 
+    print(f'{k:<15}', end='') 
 print()    
-print('-'*42)
+print('-'*40)
 for c, player in enumerate(team):
-    print(f'{c:>4}', end='')
+    print(f'{c:>3} ', end='')
     for d in player.values():
         print(f'{str(d):<15}', end='') 
     print()           
 print('-----')
-    while True:
-        status = str(input('Para visualizar os dados de um jogador específico digite seu número '))
-        print('Por favor digite apenas S ou N.')
+    
+#while True:
+#    status = str(input('Para visualizar os dados de um jogador específico digite seu número '))
+#    print('Por favor digite apenas S ou N.')
