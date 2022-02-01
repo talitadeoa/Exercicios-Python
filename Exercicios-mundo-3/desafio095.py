@@ -6,7 +6,7 @@ player = dict()
 while True:
     player = {'name': str(input('Nome: ')), 'matches': int(input('Partidas jogadas: ')), 'goals':[], 'total': 0}  
     for i in range(player['matches']):
-        player['goals'].append(int(input(f'Quantos gols na {i+1}ª partida ')))
+        player['goals'].append(int(input(f'    Quantos gols na {i+1}ª partida ')))
         player['total'] = sum(player['goals'])
     team.append(player.copy())   
     player.clear() 
