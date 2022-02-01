@@ -31,9 +31,5 @@ for c, player in enumerate(team):
     print()           
 print('-----')
     while True:
-        status = str(input('Para visualizar os dados de um jogador específico digite seu número ')).upper()[0]
-        if status in 'SN':
-            break
+        status = str(input('Para visualizar os dados de um jogador específico digite seu número '))
         print('Por favor digite apenas S ou N.')
-    if status == 'N':
-        break  
