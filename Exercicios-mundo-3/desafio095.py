@@ -30,3 +30,10 @@ for c, player in enumerate(team):
         print(f'{str(d):<15}', end='') 
     print()           
 print('-----')
+    while True:
+        status = str(input('Para visualizar os dados de um jogador específico digite seu número ')).upper()[0]
+        if status in 'SN':
+            break
+        print('Por favor digite apenas S ou N.')
+    if status == 'N':
+        break  
