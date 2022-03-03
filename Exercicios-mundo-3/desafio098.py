@@ -12,5 +12,5 @@ def contador(ini,fim,pas):
         sleep(0.5)
     print('Fim!')
 
-#contador(1,10,1)
+contador(1,10,1)
 contador(10,0,2)
