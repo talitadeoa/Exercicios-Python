@@ -6,21 +6,30 @@
 from time import sleep
 
 def linha():
-    print('--'*20)
+    print('-='*20)
     
 def contador(ini,fim,pas):
+    if pas < 0:
+        pas *= -1
+    if pas == 0:
+        pas = 1
+    linha()
     print(f'Contagem de {ini} até {fim} de {pas} em {pas}:')
-    if ini < fim:
-        for i in range(ini,fim,pas):
+    if ini <= fim:
+        for i in range(ini,(fim+1),pas):
             print(f'{i} ', end='', flush=True)
             sleep(0.5)
         print('Fim!')
-    else:
+    else: 
         cont = ini
-        while cont 
+        while cont >= fim:
+            print(f'{cont} ', end='', flush=True)
+            cont -= pas
+            sleep(0.5)
+        print('Fim!')
 
 contador(1,10,1)
 contador(10,0,2)
 linha()
 print('Agora é sua vez de escolher a contagem!')
-contador(int(input('Início:')),int(input('Fim:')),int(input('Passe:')))
+contador(int(input('Início:   ')),int(input('Fim:      ')),int(input('Passe:    ')))
