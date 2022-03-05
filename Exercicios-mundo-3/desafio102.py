@@ -3,8 +3,8 @@
 def fatorial(num=1, show=False):
     """
     ->Calcula o fatorial de um número
-    :param a: Valor a ser calculado o fatorial
-    :param b: Opção para mostrar ou não o calculo
+    :param num: Valor a ser calculado o fatorial
+    :param show: Opção para mostrar ou não o calculo
     :return: O valor do fatorial
     """
     f = 1 
