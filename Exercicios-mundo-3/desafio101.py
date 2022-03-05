@@ -6,11 +6,11 @@ def vote(year):
     age = date.today().year - year
     if age < 16:
         return str(f"Com {age} anos: Não vota")
-    elif age >= 16 and age < 65:
-        return str(f"Com {age} anos: Voto obrigatório")
-    else:
+    elif 16 <= age < 18 or age > 65:
         return str(f"Com {age} anos: Voto opcional")
+    else:
+        return str(f"Com {age} anos: Voto obrigatório")
     
-vote(int(input('Em que ano você nasceu? ')))
+print(vote(int(input('Em que ano você nasceu? '))))
 
 
