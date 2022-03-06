@@ -5,7 +5,7 @@ def leiaInt(msg):
     while not inter.isdigit():
         print('Por favor digite apenas um inteiro válido')    
         inter = input(msg)
-    return inter
+    return int(inter)
 
 n = leiaInt('Digite um número: ')
 print(f'Você acabou de digitar {n}')

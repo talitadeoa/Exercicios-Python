@@ -11,15 +11,11 @@ def notas(*n,sit=False):
     if sit:
         if dict['media'] > 7:
             dict['situação'] = "Boa"   
-            return dict  
         elif 7 > dict['media'] > 6:
-            dict['situação'] = "Razoável"
-            return dict     
+            dict['situação'] = "Razoável"   
         else:
             dict['situação'] = "Ruim"  
-            return dict   
-    else:
-        return dict  
+    return dict  
 
 print(notas(3,5,0.2,sit=True))   
 print(notas(3,5,0.2))    
