@@ -8,19 +8,6 @@ cores = ('\033[m',  # sem cores
          '\033[7;30m'  # branco
          )
 
-
-    """     text        background
-    30      black       preto          40
-    31      red         vermelho       41
-    32      green       verde          42
-    33      yellow      amarelo        43
-    34      blue        azul           44
-    35      Magenta     Magenta        45
-    36      cyan        ciano          46
-    37      grey        cinza          47
-    97      white       branco         107
-    """
-
 cores = {    #cores normais
          'vermelho':'\033[31m',
          'azul':'\033[34m',
@@ -50,4 +37,17 @@ cores = {    #cores normais
          'branco sublinhado':'\033[4;30m',
          'roxo sublinhado':'\033[4;35m',
          'verde sublinhado':'\033[4;32m',
-         'ciano sublinhado':'\033[4;36m'        }
+         'ciano sublinhado':'\033[4;36m'}
+
+"""
+    text                       background
+    30      black       preto          40
+    31      red         vermelho       41
+    32      green       verde          42
+    33      yellow      amarelo        43
+    34      blue        azul           44
+    35      Magenta     Magenta        45
+    36      cyan        ciano          46
+    37      grey        cinza          47
+    97      white       branco        107
+"""
