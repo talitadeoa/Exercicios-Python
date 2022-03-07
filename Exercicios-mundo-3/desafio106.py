@@ -25,6 +25,6 @@ def pyhelp():
             tit("Obrigada por usar o PyHelp, xauzin",3)    
             break      
         tit(f"Acessando o manual de \'{cmd}\'...",4)
-        help(cmd)
+        help(cmd)  
         
 pyhelp()
