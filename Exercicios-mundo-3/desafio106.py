@@ -1,7 +1,5 @@
 #Função que cria um mini-sistema para utilizar o interactive help
 
-from time import sleep
-
 cores = ('\033[m',  # sem cores
          '\033[1;97;46m', #cyan
          '\033[1;32;47m', #verde e cinza
@@ -28,4 +26,5 @@ def pyhelp():
             break      
         tit(f"Acessando o manual de \'{cmd}\'...",4)
         help(cmd)
+        
 pyhelp()
