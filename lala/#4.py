@@ -1,6 +1,15 @@
-def soma(a,b):
-    s = a+b
-    print(f'A = {a} | B = {b}')
-    print(f'A soma de A e B é igual a {s}')
-    
-soma(5,7)
+
+def piramide(altura):
+    i = altura-1
+    largura = 1
+    while i > 0:
+        print(' '*(i), end='')
+        i -= 1
+        if largura < altura:
+            print('#'*(largura))
+            largura += 1
+
+n = int(input('Qual a altura? '))
+piramide(n)
+        
+        
