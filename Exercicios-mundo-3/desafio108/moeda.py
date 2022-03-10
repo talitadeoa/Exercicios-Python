@@ -1,2 +1,1 @@
-def moeda
-a
+def moeda:
