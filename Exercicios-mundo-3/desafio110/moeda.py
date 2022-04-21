@@ -49,11 +49,13 @@ def tit(txt,cor=0):
     print(f'{txt:^{bar}}')
     print('='*bar)
 
-def resumo(p,a,d):
-    tit('Resumo de Valores')
-    print(f'O preço analisado é: {p}')
-    print(f'A metade é: {metade(p,True)}')
-    print(f'O dobro é: {dobro(p,True)}')
-    print(f'{a}% de Aumento: {aumentar(p,a,True)}')
-    print(f'{d}% de Desconto: {diminuir(p,d,True)}')    
+def resumo(p=0,taxaa=10,taxad=5):
+    linha()
+    print(f'Resumo de Valores'.center(30))
+    linha()
+    print(f'Preço analisado: \t{moeda(p)}')
+    print(f'Metade do preço: \t{metade(p,True)}')
+    print(f'Dobro do preço: \t{dobro(p,True)}')
+    print(f'{taxaa}% de Aumento: \t{aumentar(p,taxaa,True)}')
+    print(f'{taxad}% de Desconto: \t{diminuir(p,taxad,True)}')    
     linha()
